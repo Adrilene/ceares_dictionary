@@ -1,6 +1,13 @@
+import random
+from googlesearch import search
+
 file = open('list_words.txt', 'r')
 
 lines = file.readlines()
  
-for line in lines:
-    print('the meaning is...')
+print('Generating random word... ')
+word = lines[random.randint(0, len(lines)-1)]
+print(word)
+print('You can find the meaning at ')
+for i in search(word, tld='com', num=1, start=0, stop=10, pause=2.0):
+    print(i)
