@@ -2,9 +2,9 @@ import random
 from googlesearch import search
 
 file = open('list_words.txt', 'r')
+words = file.readlines()
 
 lines = file.readlines()
- 
 print('Generating random word... ')
 word = lines[random.randint(0, len(lines)-1)]
 print(word)

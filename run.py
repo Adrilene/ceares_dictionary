@@ -1,10 +1,13 @@
-from flask import Flask
-
+from flask import Flask, render_template
+from base_file import words
+import random
 
 app = Flask(__name__)
 
-def index('/', methods=['GET']):
-    return 'OK'
+@app.route('/', methods=['GET'])
+def index():
+    word = random.choice(words)
+    return render_template('index.html', word=word)
 
 
 if  __name__ == '__main__':
