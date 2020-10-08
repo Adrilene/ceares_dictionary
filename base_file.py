@@ -1,3 +1,6 @@
 file = open('list_words.txt', 'r')
 
-print(file.read())
+lines = file.readlines()
+ 
+for line in lines:
+    print('the meaning is...')
