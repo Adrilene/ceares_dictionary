@@ -20,6 +20,9 @@ def index():
     word = random.choice(words)
     return render_template('index.html', word=word)
 
+@app.route('/support', methods=['GET'])
+def index():
+    return "Woeking (Ceares Dictionary)"
 
 if '__main__' ==__name__:
     app.run()
