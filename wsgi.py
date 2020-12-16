@@ -24,9 +24,9 @@ def index():
     return render_template("index.html", word=word)
 
 
-@app.route("/support", methods=["GET"])
-def index():
-    return "Woeking (Ceares Dictionary)"
+@app.route("/health_check", methods=["GET"])
+def health_check():
+    return "Working (Ceares Dictionary)"
 
 
 if "__main__" == __name__:
