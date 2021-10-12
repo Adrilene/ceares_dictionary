@@ -5,15 +5,21 @@ body {
 }
 
 button {
-    background-color: #6495ED;
+    background-color: #FFC300;
     border: none;
-    color: white;
+    color: #20232a;
     padding: 8px 18px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 10px;
+    border-radius: 10px;
+}
+
+.block {
+    background-color: #6495ED;
+    border-radius: 10px;
 }
 
 h1, h2, h3, h4 {
