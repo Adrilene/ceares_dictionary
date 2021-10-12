@@ -1,0 +1,27 @@
+body {
+    background-color: #20232a;
+    color: #ffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    background-color: #6495ED;
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+}
+
+h1, h2, h3, h4 {
+    margin: 10px;
+}
+
+.ceares {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

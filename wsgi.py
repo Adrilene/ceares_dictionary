@@ -30,4 +30,4 @@ def health_check():
 
 
 if "__main__" == __name__:
-    app.run()
+    app.run(debug=True)

@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <title>Ceares Dictionary</title>
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='reset.css') }}">
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='home.css') }}">
 </head>
 <body>
-<h3>Ceares Dictionary</h3>
-<h4>{{word}}</h4>
-<form action="http://127.0.0.1:5000" method="get">
-    <button>generate</button>
-</form>
+    <div class="ceares">
+        <h3>Ceares Dictionary</h3>
+        <h4>{{word}}</h4>
+        <form action="http://127.0.0.1:5000" method="get">
+            <button>Generate</button>
+        </form>
+    </div>
 </body>
 </html>
